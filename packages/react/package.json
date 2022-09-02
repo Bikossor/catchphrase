@@ -11,5 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "@catchphrase/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.2"
   }
 }
