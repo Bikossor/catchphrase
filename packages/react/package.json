@@ -11,7 +11,9 @@
   "author": "André Lichtenthäler",
   "license": "MIT",
   "dependencies": {
-    "@catchphrase/core": "*"
+    "@catchphrase/core": "*",
+    "@types/react": "^18.0.18",
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "typescript": "^4.8.2"
