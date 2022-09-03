@@ -4,7 +4,9 @@
     "module": "CommonJS",
     "outDir": "dist/",
     "pretty": true,
-    "declaration": true
+    "declaration": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"],
