@@ -12,6 +12,8 @@ export type LikeLanguageCode = string | number | symbol;
  */
 export type TranslationOptions<T> = Readonly<T>;
 
+export type TranslationFn<O> = (options?: O) => string;
+
 /**
  * Used to implement the `TranslationOptions`.
  *
@@ -32,6 +34,6 @@ export type TranslationMap<
   O extends TranslationOptions<{}>
 > = {
   [languageCode in L]: {
-    [optionKey in keyof O]: (options?: O[optionKey]) => string;
+    [optionKey in keyof O]: TranslationFn<O[optionKey]>;
   };
 };

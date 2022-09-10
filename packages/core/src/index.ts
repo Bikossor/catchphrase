@@ -1,1 +1,1 @@
-export { TranslationMap, TranslationOptions } from "./types";
+export { TranslationMap, TranslationOptions, TranslationFn } from "./types";
