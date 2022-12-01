@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "@catchphrase/core",
+      "path": "packages/core"
+    },
+    {
+      "name": "@catchphrase/react",
+      "path": "packages/react"
+    }
+  ]
+}
