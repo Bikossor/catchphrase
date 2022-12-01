@@ -1,6 +1,6 @@
-const { rmSync } = require("fs");
-const { execSync } = require("child_process");
-const { resolve } = require("path");
+import { rmSync } from "fs";
+import { execSync } from "child_process";
+import { resolve } from "path";
 
 const outDirName = "dist";
 const currentDir = __dirname;
