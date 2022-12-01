@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "node scripts/build.js"
   },
   "keywords": [],
@@ -17,6 +17,9 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.8.2"
   }
 }
