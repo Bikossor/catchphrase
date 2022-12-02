@@ -15,11 +15,10 @@ jobs:
     strategy:
       matrix:
         # (2022-12-03)
-        # v14: Maintenance (end-of-life: 2023-04-30)
         # v16: Maintenance (end-of-life: 2023-09-11)
         # v18: LTS (end-of-life: 2025-04-30)
         # v19: Current (end-of-life: 2023-06-01)
-        node-version: [14.x, 16.x, 18.x, 19.x]
+        node-version: [16.x, 18.x, 19.x]
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
