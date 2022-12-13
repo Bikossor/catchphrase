@@ -1,3 +1,5 @@
+import { createTranslation } from "./createTranslation";
+
 export type LanguageCode = string | number | symbol;
 
 export type TranslationThunk<L extends LanguageCode, K extends object> = () => {
@@ -16,4 +18,10 @@ export type CreateTranslationReturn<
    * Returns all language codes.
    */
   getLanguageCodes: () => L[];
+};
+
+export type Catchphrase = {
+  createTranslation: typeof createTranslation;
+  setDefaultLanguage: (languageCode: LanguageCode) => void;
+  getDefaultLanguage: () => LanguageCode;
 };
