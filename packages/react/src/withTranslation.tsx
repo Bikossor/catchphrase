@@ -1,8 +1,9 @@
-import React, { FC } from "react";
-import { TProps } from "./types";
+import { CreateTranslationReturn, LanguageCode } from "@catchphrase/core";
+import { FC } from "react";
 
 export const withTranslations =
-  <M,>(Component: FC<TProps<M>>) =>
-  (props: TProps<M>) =>
-  () =>
-    <Component {...props} />;
+  <L extends LanguageCode, K extends object>(
+    translationProps: CreateTranslationReturn<L, K>
+  ) =>
+  (Component: FC<CreateTranslationReturn<L, K>>) =>
+    <Component {...translationProps} />;
