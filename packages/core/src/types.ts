@@ -1,39 +1,19 @@
-export type LikeLanguageCode = string | number | symbol;
+export type LanguageCode = string | number | symbol;
 
-/**
- * Used to wrap each definition of translation options.
- *
- * @example
- * ```
- * type tOptions = TranslationOptions<{
- *   name: string;
- * }>;
- * ```
- */
-export type TranslationOptions<T> = Readonly<T>;
+export type TranslationThunk<L extends LanguageCode, K extends object> = () => {
+  [language in L]: K;
+};
 
-export type TranslationFn<O> = (options?: O) => string;
-
-/**
- * Used to implement the `TranslationOptions`.
- *
- * @example
- * ```
- * const tMap: TranslationMap<"de" | "en", tOptions> = {
- *   de: {
- *     name: (options) => options.name,
- *   },
- *   en: {
- *     name: (options) => options.name,
- *   },
- * };
- * ```
- */
-export type TranslationMap<
-  L extends LikeLanguageCode,
-  O extends TranslationOptions<{}>
+export type CreateTranslationReturn<
+  L extends LanguageCode,
+  K extends object
 > = {
-  [languageCode in L]: {
-    [optionKey in keyof O]: TranslationFn<O[optionKey]>;
-  };
+  /**
+   * Returns the translations for the given language.
+   */
+  selectLanguage: (languageCode: L) => K;
+  /**
+   * Returns all language codes.
+   */
+  getLanguageCodes: () => L[];
 };
