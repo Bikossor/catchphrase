@@ -16,7 +16,7 @@ export const createCatchphrase = <L extends LanguageCode>(): Catchphrase<L> => {
     /**
      * Creates a new translation
      */
-    createTranslation, // TODO: remove languageCode from createTranslation and use it from the catchphrase object
+    createTranslation,
     /**
      * Sets the default language for the catchphrase instance
      */
