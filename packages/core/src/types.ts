@@ -1,5 +1,3 @@
-import { createTranslation } from "./createTranslation";
-
 export type LanguageCode = string | number | symbol;
 
 export type TranslationThunk<L extends LanguageCode, K extends object> = () => {
