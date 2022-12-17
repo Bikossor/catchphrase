@@ -5,7 +5,7 @@ import { Catchphrase, LanguageCode } from "./types";
  * Creates a new catchphrase instance
  * @returns
  */
-export const createCatchphrase = <L extends LanguageCode>(): Catchphrase => {
+export const createCatchphrase = <L extends LanguageCode>(): Catchphrase<L> => {
   let defaultLanguage: L = null;
 
   const setDefaultLanguage = (languageCode: L) => {
@@ -16,7 +16,7 @@ export const createCatchphrase = <L extends LanguageCode>(): Catchphrase => {
     /**
      * Creates a new translation
      */
-    createTranslation, // TODO: remove languageCode from createTranslation and use it from the catchphrase object
+    createTranslation,
     /**
      * Sets the default language for the catchphrase instance
      */
