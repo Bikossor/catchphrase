@@ -20,8 +20,10 @@ export type CreateTranslationReturn<
   getLanguageCodes: () => L[];
 };
 
-export type Catchphrase = {
-  createTranslation: typeof createTranslation;
+export type Catchphrase<T extends LanguageCode> = {
+  createTranslation: <K extends object, L extends LanguageCode = T>(
+    translationThunk: TranslationThunk<L, K>
+  ) => CreateTranslationReturn<L, K>;
   setDefaultLanguage: (languageCode: LanguageCode) => void;
   getDefaultLanguage: () => LanguageCode;
 };
