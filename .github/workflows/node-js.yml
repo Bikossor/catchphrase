@@ -26,7 +26,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
-        run: npm ci
+      - name: Bootstrap packages
+        run: lerna bootstrap
+      - name: Build packages
+        run: lerna run build
       - name: Run tests
         run: npm test
