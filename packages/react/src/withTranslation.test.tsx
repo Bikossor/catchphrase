@@ -11,7 +11,9 @@ describe("withTranslation", () => {
     Greeting: (name: string) => string;
   };
 
-  const { createTranslation } = createCatchphrase<Languages>();
+  const { createTranslation } = createCatchphrase<Languages>({
+    defaultLanguage: "de",
+  });
 
   const translations = createTranslation<Translations>(() => ({
     en: {
