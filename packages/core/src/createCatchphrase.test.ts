@@ -4,11 +4,10 @@ describe("createCatchphrase", () => {
   type LanguageCode = "de" | "en";
 
   it("should set the default language", () => {
-    const { getDefaultLanguage, setDefaultLanguage } =
-      createCatchphrase<LanguageCode>();
+    const { getDefaultLanguage } = createCatchphrase<LanguageCode>({
+      defaultLanguage: "de",
+    });
 
-    setDefaultLanguage("en");
-
-    expect(getDefaultLanguage()).toStrictEqual<LanguageCode>("en");
+    expect(getDefaultLanguage()).toStrictEqual<LanguageCode>("de");
   });
 });
