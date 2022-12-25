@@ -18,13 +18,18 @@ export type CreateTranslationReturn<
   getLanguageCodes: () => L[];
 };
 
-export type Catchphrase<T extends LanguageCode> = {
-  createTranslation: <K extends object, L extends LanguageCode = T>(
+export type Catchphrase<L extends LanguageCode> = {
+  createTranslation: <K extends object>(
     translationThunk: TranslationThunk<L, K>
   ) => CreateTranslationReturn<L, K>;
   getDefaultLanguage: () => LanguageCode;
 };
 
 export type CatchphraseConfig<L extends LanguageCode> = {
+  defaultLanguage: L;
+};
+
+// TODO maybe merge this with CatchphraseConfig?
+export type CreateTranslationConfig<L extends LanguageCode> = {
   defaultLanguage: L;
 };

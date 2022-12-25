@@ -12,7 +12,7 @@ export const createCatchphrase = <L extends LanguageCode>({
     /**
      * Creates a new translation
      */
-    createTranslation,
+    createTranslation: createTranslation({ defaultLanguage }),
     /**
      * @returns the default language for the catchphrase instance
      */
