@@ -13,9 +13,11 @@ export const createTranslation =
     const translations = translationThunk();
     const selectLanguage = (languageCode: L) => translations[languageCode];
     const getLanguageCodes = () => Object.keys(translations) as L[];
+    const getTranslations = () => selectLanguage(defaultLanguage); // TODO: argument should be settable (other than defaultLanguage)
 
     return {
       selectLanguage,
       getLanguageCodes,
+      getTranslations,
     };
   };

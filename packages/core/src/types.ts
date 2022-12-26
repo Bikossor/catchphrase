@@ -16,6 +16,10 @@ export type CreateTranslationReturn<
    * Returns all language codes.
    */
   getLanguageCodes: () => L[];
+  /**
+   * Returns the translations.
+   */
+  getTranslations: () => K;
 };
 
 export type Catchphrase<L extends LanguageCode> = {
