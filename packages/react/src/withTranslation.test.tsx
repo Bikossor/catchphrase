@@ -27,8 +27,8 @@ describe("withTranslation", () => {
   it("should render a translated component", () => {
     const TranslatedComponent = () =>
       // TODO this is not the final API
-      withTranslations(translations)(({ selectLanguage }) => {
-        const { Greeting } = selectLanguage("de");
+      withTranslations(translations)(({ getTranslations }) => {
+        const { Greeting } = getTranslations();
 
         return <div>{Greeting("André")}</div>;
       });
