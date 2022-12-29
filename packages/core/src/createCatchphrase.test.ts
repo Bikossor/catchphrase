@@ -8,11 +8,11 @@ describe("createCatchphrase", () => {
   };
 
   it("should set the default language", () => {
-    const { getDefaultLanguage } = createCatchphrase<LanguageCode>({
+    const { getLanguage } = createCatchphrase<LanguageCode>({
       languageSelector: () => "de",
     });
 
-    expect(getDefaultLanguage()).toStrictEqual<LanguageCode>("de");
+    expect(getLanguage()).toStrictEqual<LanguageCode>("de");
   });
 
   it("should translate a string using the defaultLanguage", () => {

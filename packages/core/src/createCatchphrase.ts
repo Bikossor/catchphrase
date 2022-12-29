@@ -14,8 +14,8 @@ export const createCatchphrase = <L extends LanguageCode>({
      */
     createTranslation: createTranslation({ languageSelector }),
     /**
-     * @returns the default language for the catchphrase instance
+     * @returns the language for the catchphrase instance
      */
-    getDefaultLanguage: () => languageSelector(),
+    getLanguage: () => languageSelector(),
   };
 };
