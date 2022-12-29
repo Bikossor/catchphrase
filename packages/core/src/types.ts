@@ -29,6 +29,8 @@ export type Catchphrase<L extends LanguageCode> = {
   getDefaultLanguage: () => LanguageCode;
 };
 
+export type LanguageSelector<L extends LanguageCode> = () => L;
+
 export type CatchphraseConfig<L extends LanguageCode> = {
   defaultLanguage: L;
 };
