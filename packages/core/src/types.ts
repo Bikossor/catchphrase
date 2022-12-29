@@ -32,10 +32,10 @@ export type Catchphrase<L extends LanguageCode> = {
 export type LanguageSelector<L extends LanguageCode> = () => L;
 
 export type CatchphraseConfig<L extends LanguageCode> = {
-  defaultLanguage: L;
+  languageSelector: LanguageSelector<L>;
 };
 
 // TODO maybe merge this with CatchphraseConfig?
 export type CreateTranslationConfig<L extends LanguageCode> = {
-  defaultLanguage: L;
+  languageSelector: LanguageSelector<L>;
 };
