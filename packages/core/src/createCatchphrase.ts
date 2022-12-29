@@ -6,16 +6,16 @@ import { Catchphrase, CatchphraseConfig, LanguageCode } from "./types";
  * @returns
  */
 export const createCatchphrase = <L extends LanguageCode>({
-  defaultLanguage,
+  languageSelector,
 }: CatchphraseConfig<L>): Catchphrase<L> => {
   return {
     /**
      * Creates a new translation
      */
-    createTranslation: createTranslation({ defaultLanguage }),
+    createTranslation: createTranslation({ languageSelector }),
     /**
-     * @returns the default language for the catchphrase instance
+     * @returns the language for the catchphrase instance
      */
-    getDefaultLanguage: () => defaultLanguage,
+    getLanguage: () => languageSelector(),
   };
 };

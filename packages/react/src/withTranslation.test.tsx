@@ -12,7 +12,7 @@ describe("withTranslation", () => {
   };
 
   const { createTranslation } = createCatchphrase<Languages>({
-    defaultLanguage: "de",
+    languageSelector: () => "de",
   });
 
   const translations = createTranslation<Translations>(() => ({
