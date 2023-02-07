@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "jest --passWithNoTests",
+    "test": "jest",
     "build": "ts-node scripts/build.ts"
   },
   "keywords": [],
