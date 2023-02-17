@@ -6,9 +6,12 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
   },
   "devDependencies": {
-    "lerna": "^6.4.1"
+    "lerna": "^6.4.1",
+    "prettier": "2.8.4"
   }
 }
