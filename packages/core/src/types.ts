@@ -6,7 +6,7 @@ export type TranslationThunk<L extends LanguageCode, K extends object> = () => {
 
 export type CreateTranslationReturn<
   L extends LanguageCode,
-  K extends object
+  K extends object,
 > = {
   /**
    * Returns the translations for the given language.
@@ -24,7 +24,7 @@ export type CreateTranslationReturn<
 
 export type Catchphrase<L extends LanguageCode> = {
   createTranslation: <K extends object>(
-    translationThunk: TranslationThunk<L, K>
+    translationThunk: TranslationThunk<L, K>,
   ) => CreateTranslationReturn<L, K>;
   getLanguage: () => LanguageCode;
 };
