@@ -17,10 +17,10 @@ describe("withTranslation", () => {
 
   const translations = createTranslation<Translations>(() => ({
     en: {
-      Greeting: (name) => `Hello ${name}!`,
+      Greeting: name => `Hello ${name}!`,
     },
     de: {
-      Greeting: (name) => `Hallo ${name}!`,
+      Greeting: name => `Hallo ${name}!`,
     },
   }));
 

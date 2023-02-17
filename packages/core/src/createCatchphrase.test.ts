@@ -22,10 +22,10 @@ describe("createCatchphrase", () => {
 
     const { getTranslations } = createTranslation<TranslationType>(() => ({
       de: {
-        Greeting: (name) => `Hallo ${name}`,
+        Greeting: name => `Hallo ${name}`,
       },
       en: {
-        Greeting: (name) => `Hello ${name}`,
+        Greeting: name => `Hello ${name}`,
       },
     }));
 

@@ -8,7 +8,7 @@ import {
 export const createTranslation =
   <L extends LanguageCode>({ languageSelector }: CreateTranslationConfig<L>) =>
   <K extends object>(
-    translationThunk: TranslationThunk<L, K>
+    translationThunk: TranslationThunk<L, K>,
   ): CreateTranslationReturn<L, K> => {
     const translations = translationThunk();
     const selectLanguage = (languageCode: L) => translations[languageCode];
