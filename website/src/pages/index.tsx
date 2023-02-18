@@ -21,6 +21,12 @@ function HomepageHeader() {
           >
             Get Started
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro" // TODO: change link
+          >
+            API Reference
+          </Link>
         </div>
       </div>
     </header>
