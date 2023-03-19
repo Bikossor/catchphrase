@@ -6,7 +6,7 @@ sidebar_position: 1
 
 `catchphrase` helps you internationalize your projects.
 
-## Supported Frameworks
+## Supported frameworks
 
 | Framework                                              | Package             |
 | ------------------------------------------------------ | ------------------- |
