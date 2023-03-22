@@ -6,6 +6,11 @@ sidebar_position: 1
 
 `catchphrase` helps you internationalize your projects.
 
+## Features
+
+- Completly type-safe out of the box
+- TODO
+
 ## Supported frameworks
 
 | Framework                                              | Package             |
