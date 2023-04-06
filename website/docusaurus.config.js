@@ -83,6 +83,10 @@ const config = {
                 label: "Documentation",
                 to: "/docs/intro",
               },
+              {
+                label: "Examples",
+                href: "https://github.com/Bikossor/catchphrase/tree/main/examples",
+              },
             ],
           },
           {
