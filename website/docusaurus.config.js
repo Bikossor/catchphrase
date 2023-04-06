@@ -59,7 +59,7 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Documentation",
           },
           {
             href: "https://www.npmjs.com/org/catchphrase",
@@ -80,7 +80,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Documentation",
                 to: "/docs/intro",
               },
             ],
