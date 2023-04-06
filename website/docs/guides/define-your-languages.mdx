@@ -2,21 +2,22 @@
 sidebar_position: 1
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # Define your languages
 
 You need to specify languages that you'll be able to translate to. This can be done in a couple of different ways:
 
-## Using [string literal types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
-
-### Example
+<Tabs>
+<TabItem value="literal-types" label="Literal types">
 
 ```ts
 type Languages = "de" | "en";
 ```
 
-## Using enums
-
-### Example
+</TabItem>
+<TabItem value="enums" label="Enums">
 
 ```ts
 enum Languages {
@@ -24,3 +25,6 @@ enum Languages {
   "en",
 }
 ```
+
+</TabItem>
+</Tabs>
