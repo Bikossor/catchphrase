@@ -1,5 +1,7 @@
 # `createTranslation`
 
+`createTranslation` is a function that allows you to specify your translations.
+
 ## Example
 
 ```ts
