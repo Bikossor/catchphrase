@@ -1,6 +1,6 @@
 # `createCatchphrase`
 
-`createCatchphrase` is a function that lets you create and configure `catchphrase`.
+`createCatchphrase` is a function that allows you to create and configure `catchphrase`.
 
 ## Example
 
