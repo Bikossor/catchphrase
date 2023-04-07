@@ -2,7 +2,13 @@
 sidebar_position: 4
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # Use your translations
+
+<Tabs>
+<TabItem value="react" label="React">
 
 ```ts
 const withExampleTranslations = withTranslations(exampleTranslations);
@@ -16,3 +22,6 @@ const TranslatedComponent = () =>
     return <p>{Greeting()}</p>;
   });
 ```
+
+</TabItem>
+</Tabs>
