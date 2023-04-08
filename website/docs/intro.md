@@ -6,6 +6,10 @@ sidebar_position: 1
 
 `catchphrase` helps you internationalize your projects.
 
+:::info
+Catchphrase currently only supports CSR _(client-side rendering)_ and not SSR _(server-side rendering)_. This feature will be available in the future.
+:::
+
 ## Features
 
 - Completly type-safe out of the box
