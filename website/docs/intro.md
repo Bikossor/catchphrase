@@ -13,7 +13,11 @@ Catchphrase currently only supports CSR _(client-side rendering)_ and not SSR _(
 ## Features
 
 - Completly type-safe out of the box
-- TODO
+- Translations as code
+  - Enables [code-splitting](https://legacy.reactjs.org/docs/code-splitting.html) and lazy-loading of translations
+  - Easily identify and remove translations that are not needed
+  - Rename your translations with ease and without breaking anything
+  - Share translations between projects
 
 ## Supported frameworks
 
