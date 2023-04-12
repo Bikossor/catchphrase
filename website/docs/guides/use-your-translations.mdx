@@ -7,14 +7,21 @@ import TabItem from "@theme/TabItem";
 
 # Use your translations
 
+Now that you have created your translations, you can use them in your components.
+
 <Tabs>
 <TabItem value="react" label="React">
 
-```ts
-const withExampleTranslations = withTranslations(exampleTranslations);
-```
+Using the [`withTranslations`](/docs/api/react/withTranslation) higher-order component, you can assign your translations to a component.
+This component will then receive a `getTranslations` function as a prop which will return your translations.
+
+:::info
+You can assign one translation to multiple components.
+:::
 
 ```tsx
+const withExampleTranslations = withTranslations(exampleTranslations);
+
 const TranslatedComponent = () =>
   withExampleTranslations(({ getTranslations }) => {
     const { Greeting } = getTranslations();
