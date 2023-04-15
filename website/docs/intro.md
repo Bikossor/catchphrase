@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-`catchphrase` helps you internationalize your projects.
+Catchphrase helps you internationalize your projects.
 
 :::info
 Catchphrase currently only supports CSR _(client-side rendering)_ and not SSR _(server-side rendering)_. This feature will be available in the future.
@@ -32,5 +32,5 @@ Catchphrase currently only supports CSR _(client-side rendering)_ and not SSR _(
 
 ## What you'll need
 
-- [Node.js](https://nodejs.org/) version 16 or higher (_`catchphrase` may work with older versions of Node.js too but it's not tested by the developers_)
+- [Node.js](https://nodejs.org/) version 16 or higher (_Catchphrase may work with older versions of Node.js too but it's not tested by the developers_)
 - [TypeScript](https://www.typescriptlang.org/) v4.8 or higher

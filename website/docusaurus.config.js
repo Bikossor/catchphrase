@@ -5,7 +5,7 @@ const theme = require("prism-react-renderer/themes/vsDark");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "catchphrase",
+  title: "Catchphrase",
   tagline: "Functional internationalization library for the web",
   favicon: "img/favicon.ico",
 
@@ -48,9 +48,9 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "catchphrase",
+        title: "Catchphrase",
         logo: {
-          alt: "catchphrase Logo",
+          alt: "Catchphrase Logo",
           src: "img/logo.svg",
         },
         items: [

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Configure `catchphrase`
+# Configure Catchphrase
 
 Next, we need to call the `createCatchphrase` function and pass it our previously defined `Languages` like this
 
@@ -10,4 +10,4 @@ Next, we need to call the `createCatchphrase` function and pass it our previousl
 const { createTranslation } = createCatchphrase<Languages>({...});
 ```
 
-Then you can configure `catchphrase` to meet your needs. For more information, see the [`createCatchphrase` API Reference](/docs/api/core/createCatchphrase).
+Then you can configure Catchphrase to meet your needs. For more information, see the [`createCatchphrase` API Reference](/docs/api/core/createCatchphrase).
