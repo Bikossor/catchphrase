@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Introduction
 
+:::caution
+Catchphrase is not _quite ready_ for production use. It's still in early development and the API may change frequently.
+:::
+
 Catchphrase helps you internationalize your projects.
 
 :::info
