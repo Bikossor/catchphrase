@@ -21,14 +21,14 @@ Catchphrase currently only supports CSR _(client-side rendering)_ and not SSR _(
 
 ## Supported frameworks
 
-| Framework                                              | Package             |
-| ------------------------------------------------------ | ------------------- |
-| [Angular](https://angular.io/) _(available soon)_      | -                   |
-| [Preact](https://preactjs.com/) _(available soon)_     | -                   |
-| [React](https://reactjs.org/)                          | `catchphrase/react` |
-| [SolidJS](https://www.solidjs.com/) _(available soon)_ | -                   |
-| [Svelte](https://svelte.dev/) _(available soon)_       | -                   |
-| [Vue](https://vuejs.org/) _(available soon)_           | -                   |
+| Framework                                              | Package              |
+| ------------------------------------------------------ | -------------------- |
+| [Angular](https://angular.io/) _(available soon)_      | -                    |
+| [Preact](https://preactjs.com/) _(available soon)_     | -                    |
+| [React](https://reactjs.org/)                          | `@catchphrase/react` |
+| [SolidJS](https://www.solidjs.com/) _(available soon)_ | -                    |
+| [Svelte](https://svelte.dev/) _(available soon)_       | -                    |
+| [Vue](https://vuejs.org/) _(available soon)_           | -                    |
 
 ## What you'll need
 
