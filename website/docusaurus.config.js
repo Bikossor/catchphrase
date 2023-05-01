@@ -104,6 +104,10 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/Bikossor/catchphrase",
               },
+              {
+                label: "npm",
+                href: "https://www.npmjs.com/org/catchphrase",
+              },
             ],
           },
         ],
