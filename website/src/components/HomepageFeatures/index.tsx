@@ -10,32 +10,27 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    title: "Scalable",
+    Svg: require("@site/static/img/undraw_stepping_up.svg").default,
+    description: <>Catchphrase can be used for projects of any size.</>,
+  },
+  {
+    title: "Typesafe",
+    Svg: require("@site/static/img/undraw_code_typing.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Catchphrase is fully typed so you can use your translations with
+        confidence.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "Maintainable",
+    Svg: require("@site/static/img/undraw_maintenance.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: "Powered by React",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Catchphrase is built with maintainability in mind. It's easy to manage
+        and update your translations.
       </>
     ),
   },
