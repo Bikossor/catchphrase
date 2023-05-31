@@ -1,7 +1,7 @@
 {
   "name": "@catchphrase/react",
   "version": "1.0.0",
-  "description": "",
+  "description": "React-specific bindings for @catchphrase/core",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -11,7 +11,16 @@
     "test": "jest",
     "build": "ts-node scripts/build.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "internationalization",
+    "i18n",
+    "translation",
+    "localization",
+    "l10n",
+    "globalization",
+    "catchphrase",
+    "react"
+  ],
   "author": "André Lichtenthäler",
   "license": "MIT",
   "dependencies": {
