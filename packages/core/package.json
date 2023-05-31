@@ -1,7 +1,7 @@
 {
   "name": "@catchphrase/core",
   "version": "1.0.0",
-  "description": "",
+  "description": "Functional i18n library for the web",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -11,7 +11,15 @@
     "test": "jest",
     "build": "ts-node scripts/build.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "internationalization",
+    "i18n",
+    "translation",
+    "localization",
+    "l10n",
+    "globalization",
+    "catchphrase"
+  ],
   "author": "André Lichtenthäler",
   "license": "MIT",
   "devDependencies": {
