@@ -5,6 +5,5 @@
   "changelog": true,
   "changelogPreset": "angular",
   "ignoreChanges": ["**/*.test.ts", "**/*.md"],
-  "message": "ci(release): %v [skip ci]",
-  "createRelease": "github"
+  "message": "ci(release): %v [skip ci]"
 }
