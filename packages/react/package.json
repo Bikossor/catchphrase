@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "React-specific bindings for @catchphrase/core",
   "homepage": "https://catchphrase.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bikossor/catchphrase.git",
+    "directory": "packages/react"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
