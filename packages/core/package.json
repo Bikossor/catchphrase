@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Functional i18n library for the web",
   "homepage": "https://catchphrase.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bikossor/catchphrase.git",
+    "directory": "packages/core"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
