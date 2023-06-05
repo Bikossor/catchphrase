@@ -2,6 +2,7 @@
   "name": "@catchphrase/core",
   "version": "1.0.0",
   "description": "Functional i18n library for the web",
+  "homepage": "https://catchphrase.dev",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [

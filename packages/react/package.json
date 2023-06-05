@@ -2,6 +2,7 @@
   "name": "@catchphrase/react",
   "version": "1.0.0",
   "description": "React-specific bindings for @catchphrase/core",
+  "homepage": "https://catchphrase.dev",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
