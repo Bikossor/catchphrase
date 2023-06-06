@@ -1,4 +1,7 @@
 {
+  "buildOptions": {
+    "incremental": true
+  },
   "compilerOptions": {
     "target": "ES6",
     "module": "CommonJS",
@@ -6,7 +9,9 @@
     "pretty": true,
     "declaration": true,
     "jsx": "react-jsx",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "incremental": true,
+    "rootDir": "src/",
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "src/**/*.test.ts"],
