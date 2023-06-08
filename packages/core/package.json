@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "ts-node scripts/build.ts"
+    "build": "tsc -b"
   },
   "keywords": [
     "internationalization",
@@ -32,7 +32,6 @@
     "@types/jest": "^29.5.0",
     "jest": "^29.5.0",
     "ts-jest": "^29.0.5",
-    "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
   }
 }
