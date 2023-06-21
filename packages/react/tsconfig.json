@@ -11,14 +11,8 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "incremental": true,
-    "rootDir": "src/",
+    "rootDir": "src/"
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "src/**/*.test.ts"],
-  "ts-node": {
-    "compilerOptions": {
-      "esModuleInterop": true,
-      "module": "CommonJS"
-    }
-  }
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }
