@@ -11,7 +11,7 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "incremental": true,
-    "rootDir": "src/",
+    "rootDir": "src/"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "src/**/*.test.ts"]
