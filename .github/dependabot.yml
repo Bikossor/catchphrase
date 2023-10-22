@@ -23,6 +23,15 @@ updates:
       - "dependencies: npm"
     reviewers:
       - "bikossor"
+  - package-ecosystem: "npm"
+    directory: "/examples"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+    labels:
+      - "dependencies: npm"
+    reviewers:
+      - "bikossor"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
