@@ -13,7 +13,8 @@ export const InformationTextTranslations = createTranslation<Translations>(
         "These translations depend on the language of your browser.",
       SecondLine: () =>
         "If you change the language of your browser, the translations will change too.",
-      ThirdLine: () => "In this example only German and English are supported.",
+      ThirdLine: () =>
+        "In this example only German, English and French are supported.",
     },
     de: {
       FirstLine: () =>
@@ -21,7 +22,7 @@ export const InformationTextTranslations = createTranslation<Translations>(
       SecondLine: () =>
         "Wenn du die Sprache deines Browsers änderst, ändern sich auch die Übersetzungen.",
       ThirdLine: () =>
-        "In diesem Beispiel wird nur Deutsch und Englisch unterstützt.",
+        "In diesem Beispiel wird nur Deutsch, Englisch und Französich unterstützt.",
     },
     fr: {
       FirstLine: () =>
@@ -29,7 +30,7 @@ export const InformationTextTranslations = createTranslation<Translations>(
       SecondLine: () =>
         "Si vous changez la langue de votre navigateur, les traductions changeront également.",
       ThirdLine: () =>
-        "Dans cet exemple, seuls l'allemand et l'anglais sont pris en charge.",
+        "Dans cet exemple, seuls l'allemand, l'anglais et le francais sont pris en charge.",
     },
   }),
 );
