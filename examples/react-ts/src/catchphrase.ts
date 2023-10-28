@@ -1,6 +1,6 @@
 import { createCatchphrase } from "@catchphrase/core";
 
-type Languages = "en" | "de";
+type Languages = "en" | "de" | "fr";
 
 const { createTranslation } = createCatchphrase<Languages>({
   languageSelector: () => {
