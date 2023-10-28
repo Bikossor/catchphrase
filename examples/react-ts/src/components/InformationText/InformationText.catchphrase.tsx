@@ -22,13 +22,14 @@ export const InformationTextTranslations = createTranslation<Translations>(
         "Wenn du die Sprache deines Browsers änderst, ändern sich auch die Übersetzungen.",
       ThirdLine: () =>
         "In diesem Beispiel wird nur Deutsch und Englisch unterstützt.",
-    },fr:{
+    },
+    fr: {
       FirstLine: () =>
         "Ces traductions dépendent de la langue de votre navigateur.",
       SecondLine: () =>
         "Si vous changez la langue de votre navigateur, les traductions changeront également.",
       ThirdLine: () =>
         "Dans cet exemple, seuls l'allemand et l'anglais sont pris en charge.",
-    }
+    },
   }),
 );
