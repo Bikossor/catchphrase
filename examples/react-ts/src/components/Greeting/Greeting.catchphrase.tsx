@@ -6,9 +6,12 @@ type Translations = {
 
 export const GreetingTranslations = createTranslation<Translations>(() => ({
   en: {
-    Greeting: () => "Hello World!",
+    Greeting: () => "Hello World!"
   },
   de: {
-    Greeting: () => "Hallo Welt!",
+    Greeting: () => "Hallo Welt!"
   },
+  fr: {
+    Greeting: () => "Salut monde!"
+  }
 }));
