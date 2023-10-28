@@ -10,6 +10,10 @@ const { createTranslation } = createCatchphrase<Languages>({
         return "de";
       case "en":
       case "en-US":
+        return "en";
+      case "fr":
+      case "fr-FR":
+        return "fr";
       default:
         return "en";
     }
