@@ -1,2 +1,2 @@
-export { TProps } from "./types";
+export type { TProps } from "./types";
 export { withTranslations } from "./withTranslation";

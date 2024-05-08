@@ -1,6 +1,6 @@
 export { createCatchphrase } from "./createCatchphrase";
 export { createTranslation } from "./createTranslation";
-export {
+export type {
   CreateTranslationReturn,
   LanguageCode,
   TranslationThunk,
