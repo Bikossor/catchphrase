@@ -14,11 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        # (2022-12-03)
-        # v16: Maintenance (end-of-life: 2023-09-11)
-        # v18: LTS (end-of-life: 2025-04-30)
-        # v19: Current (end-of-life: 2023-06-01)
-        node-version: [16.x, 18.x, 19.x]
+        node-version: [lts/*, current]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
