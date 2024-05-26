@@ -1,0 +1,29 @@
+---
+title: Define your languages
+sidebar:
+  order: 1
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+You need to specify the languages into which you'll be able to translate. This can be done in several ways:
+
+<Tabs>
+<TabItem value="literal-types" label="Literal types">
+
+```ts
+type Languages = "de" | "en";
+```
+
+</TabItem>
+<TabItem value="enums" label="Enums">
+
+```ts
+enum Languages {
+  "de",
+  "en",
+}
+```
+
+</TabItem>
+</Tabs>
