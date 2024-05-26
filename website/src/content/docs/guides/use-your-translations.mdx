@@ -1,0 +1,33 @@
+---
+title: Use your translations
+sidebar:
+  order: 4
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Now that you have created your translations, you can use them in your components.
+
+<Tabs>
+<TabItem value="react" label="React">
+
+Using the [`withTranslations`](/api/react/withtranslation) higher-order component, you can assign your translations to a component.
+This component will then receive a `getTranslations` function as a prop which will return your translations.
+
+:::note
+You can assign one translation to multiple components.
+:::
+
+```tsx
+const withExampleTranslations = withTranslations(exampleTranslations);
+
+const TranslatedComponent = () =>
+  withExampleTranslations(({ getTranslations }) => {
+    const { Greeting } = getTranslations();
+
+    return <p>{Greeting()}</p>;
+  });
+```
+
+</TabItem>
+</Tabs>
