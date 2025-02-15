@@ -9,13 +9,7 @@ export const createCatchphrase = <L extends LanguageCode>({
   languageSelector,
 }: CatchphraseConfig<L>): Catchphrase<L> => {
   return {
-    /**
-     * Creates a new translation
-     */
     createTranslation: createTranslation({ languageSelector }),
-    /**
-     * @returns the language for the catchphrase instance
-     */
     getLanguage: () => languageSelector(),
   };
 };
