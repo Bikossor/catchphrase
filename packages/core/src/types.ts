@@ -21,6 +21,8 @@ export type CreateTranslationReturn<
 > = {
   /**
    * Returns the translations for the given language.
+   * @param languageCode The language to get the translations for.
+   * @see {@link LanguageCode} for the type of the language codes.
    */
   selectLanguage: (languageCode: L) => K;
   /**
