@@ -36,9 +36,15 @@ export type CreateTranslationReturn<
 };
 
 export type Catchphrase<L extends LanguageCode> = {
+  /**
+   * Creates a new translation
+   */
   createTranslation: <K extends object>(
     translationThunk: TranslationThunk<L, K>,
   ) => CreateTranslationReturn<L, K>;
+  /**
+   * Returns the current selected language code
+   */
   getLanguage: () => LanguageCode;
 };
 
