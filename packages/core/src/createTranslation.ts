@@ -5,6 +5,11 @@ import {
   TranslationThunk,
 } from "./types";
 
+/**
+ * Creates a translation object.
+ * @param languageSelector A function that returns the current selected language.
+ * @returns An object to access the translations.
+ */
 export const createTranslation =
   <L extends LanguageCode>({ languageSelector }: CreateTranslationConfig<L>) =>
   <K extends object>(
