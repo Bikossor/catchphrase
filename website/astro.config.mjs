@@ -19,10 +19,10 @@ export default defineConfig({
         alt: "Catchphrase",
       },
       favicon: "./public/favicon.svg",
-      social: {
-        github: "https://github.com/Bikossor/catchphrase",
-        stackOverflow: "https://stackoverflow.com/questions/tagged/catchphrase",
-      },
+      social: [
+        { icon: "github", label: "GitHub", href: "https://github.com/Bikossor/catchphrase" },
+        { icon: "stackOverflow", label: "Stack Overflow", href: "https://stackoverflow.com/questions/tagged/catchphrase" },
+      ],
       sidebar: [
         {
           label: "Introduction",
@@ -30,16 +30,16 @@ export default defineConfig({
         },
         {
           label: "Getting Started",
-          autogenerate: { directory: "getting-started" },
+          items: [{ autogenerate: { directory: "getting-started" } }],
         },
         {
           label: "Guides",
-          autogenerate: { directory: "guides" },
+          items: [{ autogenerate: { directory: "guides" } }],
         },
         {
           label: "API Reference",
-          autogenerate: { directory: "api" },
           collapsed: true,
+          items: [{ autogenerate: { directory: "api" } }],
         },
       ],
     }),
